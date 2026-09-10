@@ -5,6 +5,12 @@ body{
 pre{
     color:#ffffff;
 }
-h1,h3,p.desc{
+h1{
      color:#f8f5eb;
+}
+h3{
+color:#f8f5eb;
+}
+p.desc{
+color:#f8f5eb;
 }

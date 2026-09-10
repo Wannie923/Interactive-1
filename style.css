@@ -1,7 +1,10 @@
 body{
     background-color:#222222
-    color#f8f5eb;
+   
 }
 pre{
     color:#ffffff;
+}
+h1,p.desc{
+     color:#f8f5eb;
 }

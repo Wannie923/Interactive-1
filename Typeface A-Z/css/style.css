@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+}
+
+/* 26 letters container*/
+.letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+}
+
+/* letter's canvas */
+.letter-box {
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  perspective: 800px;
+}
+
+/* page1 */
+.page-dark {
+  background-color: #000000;
+}
+.page-dark .letter-box {
+  border: 0.5px solid #ffffff;
+}
+
+/* page2 */
+.page-light {
+  background-color: #ffffff;
+}
+.page-light .letter-box {
+  border: 0.5px solid #000000;
+}
+
+/* triangle's size */
+.triangle {
+  width: 2.5vw;
+  height: 2.165vw;
+
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+  transform-origin: 25% 50%;
+
+  /* animation */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* page1 */
+.page-dark .triangle {
+  background-color: #ffffff;
+}
+
+/* page2 */
+.page-light .triangle {
+  background-color: #000000;
+}
+
+/* Hover  */
+.triangle:hover {
+  transform: rotateY(-180deg);
+}
+
+/* page black background-white letters */
+/* page1 A */
+#page1-letter-A #A1 {
+  bottom: 66%;
+  left: 37%;
+}
+#page1-letter-A #A2 {
+  bottom: 44%;
+  left: 24%;
+}
+#page1-letter-A #A3 {
+  bottom: 44%;
+  left: 50%;
+}
+#page1-letter-A #A4 {
+  bottom: 22%;
+  left: 11%;
+}
+#page1-letter-A #A5 {
+  bottom: 22%;
+  left: 37%;
+}
+#page1-letter-A #A6 {
+  bottom: 22%;
+  left: 63%;
+}
+#page1-letter-A #A7 {
+  bottom: 0%;
+  left: -2%;
+}
+
+#page1-letter-A #A8 {
+  bottom: 0%;
+  left: 76%;
+}
+
+/* -------------page1 B-------------- */
+/* ----page1 B1----- */
+#page1-letter-B #B1 {
+  bottom: 84%;
+  left: 5%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B1:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+
+/* ----page1 B2----- */
+#page1-letter-B #B2 {
+  bottom: 59%;
+  left: 5%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B2:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B3----- */
+#page1-letter-B #B3 {
+  bottom: 33%;
+  left: 5%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B3:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B4----- */
+#page1-letter-B #B4 {
+  bottom: 7%;
+  left: 5%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B4:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+
+/* ----page1 B5----- */
+#page1-letter-B #B5 {
+  bottom: 71.5%;
+  left: 27%;
+
+  transform: rotate(270deg);
+}
+
+#page1-letter-B #B5:hover {
+  transform: rotate(270deg) rotateY(-180deg);
+}
+
+/* ----page1 B6----- */
+#page1-letter-B #B6 {
+  bottom: 84%;
+  left: 49%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B6:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B7----- */
+#page1-letter-B #B7 {
+  bottom: 71%;
+  left: 71%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B7:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B8----- */
+#page1-letter-B #B8 {
+  bottom: 46%;
+  left: 27%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B8:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B9----- */
+#page1-letter-B #B1 {
+  bottom: 84%;
+  left: 5%;
+
+  transform: rotate(90deg);
+}
+
+#page1-letter-B #B1:hover {
+  transform: rotate(90deg) rotateY(-180deg);
+}
+/* ----page1 B10----- */
+#page1-letter-B #B10 {
+  bottom: 7%;
+  left: 5%;
+}
+/* ----page1 B11----- */
+#page1-letter-B #B11 {
+  bottom: 7%;
+  left: 5%;
+}
+/* ----page1 B12----- */
+#page1-letter-B #B12 {
+  bottom: 7%;
+  left: 5%;
+}
+
+/* page1 H */
+#page1-letter-H #H1 {
+  bottom: 66%;
+  left: 27%;
+}
+#page1-letter-H #H2 {
+  bottom: 52%;
+  left: 27%;
+}
+
+/* page white background-black letters */
+
+/* page2 A */
+#page2-letter-A #A-t1 {
+  bottom: 60%;
+  left: 20%;
+}
+#page2-letter-A #A-t2 {
+  bottom: 40%;
+  left: 35%;
+}
+
+/* page2 B */
+#page2-letter-B #B-t1 {
+  bottom: 50%;
+  left: 30%;
+}

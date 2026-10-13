@@ -1,16 +1,15 @@
-body{
-    background-color:#222222
-   
+body {
+  background-color: #222;
 }
-pre{
-    color:#ffffff;
+pre {
+  color: #fff;
 }
-h1{
-     color:#f8f5eb;
+h1 {
+  color: #f8f5eb;
 }
-h3{
-color:#f8f5eb;
+h3 {
+  color: #f8f5eb;
 }
-p.desc{
-color:#f8f5eb;
+p.desc {
+  color: #f8f5eb;
 }

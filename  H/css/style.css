@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid black;
+  position: relative;
+  background-color: #000000;
+  perspective: 800px;
+}
+
+#left1,
+#left2,
+#left3,
+#left4 {
+  position: absolute;
+  z-index: 1;
+
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 50px solid #ffffff;
+
+  transform-origin: left center;
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease-in-out,
+    border-left-color 0.6s ease-in-out;
+}
+
+#left1:hover,
+#left2:hover,
+#left3:hover,
+#left4:hover {
+  transform: rotateY(-180deg);
+  border-left-color: #000000;
+}
+
+#left1 {
+  bottom: 66%;
+  left: 27%;
+}
+#left2 {
+  bottom: 52%;
+  left: 27%;
+}
+#left3 {
+  bottom: 38%;
+  left: 27%;
+}
+#left4 {
+  bottom: 24%;
+  left: 27%;
+}
+
+#left {
+  position: absolute;
+  bottom: 45%;
+  right: 50%;
+  z-index: 1;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 50px solid #ffffff;
+  transform-origin: left center;
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease-in-out,
+    border-right-color 0.6s ease-in-out;
+}
+#left:hover {
+  transform: rotateY(-180deg);
+  border-left-color: #000000;
+}
+
+#right {
+  position: absolute;
+  bottom: 45%;
+  left: 50%;
+  z-index: 1;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 50px solid #ffffff;
+  transform-origin: right center;
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease-in-out,
+    border-right-color 0.6s ease-in-out;
+}
+
+#right:hover {
+  transform: rotateY(-180deg);
+  border-right-color: #000000;
+}
+#right1,
+#right2,
+#right3,
+#right4 {
+  position: absolute;
+
+  z-index: 1;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 50px solid #ffffff;
+  transform-origin: right center;
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease-in-out,
+    border-right-color 0.6s ease-in-out;
+}
+#right1 {
+  bottom: 66%;
+  left: 61.5%;
+}
+#right2 {
+  bottom: 52%;
+  left: 61.5%;
+}
+#right3 {
+  bottom: 38%;
+  left: 61.5%;
+}
+#right4 {
+  bottom: 24%;
+  left: 61.5%;
+}
+#right1:hover,
+#right2:hover,
+#right3:hover,
+#right4:hover {
+  transform: rotateY(-180deg);
+  border-right-color: #000000;
+}
